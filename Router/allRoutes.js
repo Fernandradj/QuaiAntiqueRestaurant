@@ -4,11 +4,12 @@ import Route from "./Route.js";
 export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html"),
     new Route("/galerie", "Galerie", "/pages/galerie.html"),
-    new Route("/signin", "Se connecter", "/pages/auth/signin.html"),
-    new Route("/signup", "S'inscrire", "/pages/auth/signup.html"),
+    new Route("/signin", "Se connecter", "/pages/auth/signin.html", "/js/auth/signin.js"),
+    new Route("/signup", "S'inscrire", "/pages/auth/signup.html", "/js/auth/signup.js"),
     new Route("/account", "Mon compte", "/pages/auth/account.html"),
     new Route("/editPassword", "Changer mon mot de passe", "/pages/auth/editpassword.html"),
     new Route("/allResa", "Vos réservations", "/pages/reservations/allResa.html"),
+    new Route("/reserver", "Réserver", "/pages/reservations/reserver.html"),
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
