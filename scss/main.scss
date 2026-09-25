@@ -64,9 +64,25 @@ p {
             opacity: 1;
         }
 
+        .action-image-buttons {
+            opacity: 1;
+        }
+
         img {
             filter: brightness(0.3);
         }
+    }
+
+    .action-image-buttons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        transition: all 0.3s;
     }
 
     img {
@@ -82,7 +98,8 @@ p {
         transition: all 0.3s;
     }
 }
+
 .form-label {
     color: $primary;
-    
+
 }
